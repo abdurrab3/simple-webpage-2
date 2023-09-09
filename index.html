@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Bootstrap 5</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-darklight">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Netsoft BD</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Support</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Service
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Consultant</a></li>
+                  <li><a class="dropdown-item" href="#">Construction</a></li>
+                  <li><a class="dropdown-item" href="#">Doctor</a></li>
+                  <li><a class="dropdown-item" href="#">Mechanical</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="">
+            </form>
+          </div>
+        </div>
+      </nav><br>
+      <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img style="color: white;" src="img/img1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 style="color: white;"></h5>
+              <p style="color: white;">...</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="img/img2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 style="color: white;"></h5>
+              <p style="color: white;">...</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/img3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 style="color: white;"></h5>
+              <p style="color: white;">...</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev" style="color: white;">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Form section -->
+      <div class="back-color">
+      <form action="/" method="post">
+        <h2 style="text-align: center; color: rgb(255, 255, 255); padding-top: 20px; text-decoration: underline;">Course enrollment form</h2>
+
+        <div class="form-part">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      <label for="fname">Last Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+      <label for="fname">Mobile</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your mobile">
+  
+      <label for="lname">Present address</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your address">
+  
+      <label for="lname">Parmanent address</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your address">
+  
+      <label for="country">Course Level</label>
+      <select id="country" name="country">
+        <option value="australia">Begineer</option>
+        <option value="canada">Intermediate</option>
+        <option value="usa">Advanced</option>
+      </select>
+    </div>
+    <div class="form-part-right">
+        <label for="fname">Father's Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your father's name">
+        <label for="fname">Alternate number</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your number">
+        
+        <label for="fname">Home location</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your home">
+    
+        <label for="lname">District</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your district">
+    
+        <label for="lname">Zip code</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your zip code">
+    
+        <label for="country">Select course</label>
+        <select id="country" name="country">
+          <option value="australia">Ui Design</option>
+          <option value="canada">Web development</option>
+          <option value="usa">Product design</option>
+        </select>
+        </div>
+        <input type="submit">
+    </form>
+  </div>
+  <!-- table -->
+  <h2 style="text-align: center; margin-top: 2%; color: blue;">Student info Table</h2>
+  <table class="table table-striped" style="width: 80%; 
+  text-align: center;
+   margin-left: 10%; 
+   margin-top: 2%; 
+   background-color: lightcoral; 
+   color: aliceblue; 
+   border-radius: 10px;">
+    <thead style="margin-left: 100px;
+    padding-left: 100px;
+    text-align: center;
+    background-color: aqua;
+    color: white;
+    border: solid rgba(0, 0, 255, 0.233) 1px;">
+      <th>ID</th>
+      <th>Name</th>
+      <th>Phone</th>
+      <th>Email</th>
+    </thead>
+    
+    <tbody style="margin-left: 100px; padding-left: 100px; text-align: center;">
+      <tr>
+        <td>455030</td>
+        <td>Rahat Ali</td>
+        <td>+880 1558899663</td>
+        <td>rahatali@gmail.com</td>
+      </tr>
+      <tr>
+        <td>455031</td>
+        <td>Hasibur</td>
+        <td>015 88996633</td>
+        <td>hasibur@gmail.com</td>
+      </tr>
+      <tr>
+        <td>455032</td>
+        <td>Asif iqbal</td>
+        <td>019 66889922</td>
+        <td>asif@gmail.com</td>
+      </tr>
+      <tr>
+        <td>455033</td>
+        <td>Apurbo mondol</td>
+        <td>016 88554477</td>
+        <td>apurbo@gmail.com</td>
+      </tr>
+      <tr>
+        <td>455034</td>
+        <td>Abdur Rab</td>
+        <td>01406755506</td>
+        <td>abdurrab8883@gmail.com</td>
+      </tr>
+      <tr>
+        <td>455035</td>
+        <td>Sayeed</td>
+        <td>018 55444433</td>
+        <td>sayeed8899@gmail.com</td>
+      </tr>
+      <tr>
+        <td>455036</td>
+        <td>Asif Ali</td>
+        <td>019 66222922</td>
+        <td>asifali@gmail.com</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="gallery">
+    <h2 style="color: #ff893a; text-align: center; text-decoration: underline; padding-bottom: 16px;">Our Image Gallery</h2>
+    <img src="img-1.jpg" alt="" srcset="">
+    <img src="artificial-intelligence-4389372.jpg" alt="" srcset="">
+    <img src="658.jpg" alt="" srcset="">
+    <img src="mandalas-1084082.jpg" alt="" srcset="">
+    <img src="big-data.jpg" alt="" srcset="">
+    <img src="download.jpg" alt="" srcset="">
+    <img src="etherium.jpg" alt="" srcset="">
+    <img src="4k.jpg" alt="" srcset="">
+</div>
+<!-- Skill part -->
+</div>
+<div class="container">
+  <h2>My Skill</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, amet.</p>
+    <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-2 bg-info text-white">
+            <h3>HTML</h3>
+            <p>Web design course is most popular course in the world for this time because every single people working to her own business for the time, so they are create her business web page</p>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm- col-xs-4 bg-secondary text-white">
+            <h3>CSS</h3>
+            <p>Web design course is most popular course in the world for this time because every single people working to her own business for the time, so they are create her business web page</p>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-2 bg-info text-white">
+            <h3>JavaScript</h3>
+            <p>Web design course is most popular course in the world for this time because every single people working to her own business for the time, so they are create her business web page</p>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-4 bg-secondary text-white">
+            <h3>Bootstrap 5</h3>
+            <p>Web design course is most popular course in the world for this time because every single people working to her own business for the time, so they are create her business web page</p>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-2 bg-secondary text-white">
+          <h3>Node JS</h3>
+          <p>Web design course is most popular course in the world for this time because every single people working to her own business for the time, so they are create her business web page</p>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm- col-xs-4 bg-info text-white">
+          <h3>Tailwind CSS</h3>
+          <p>Web design course is most popular course in the world for this time because every single people working to her own business for the time, so they are create her business web page</p>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-2 bg-secondary text-white">
+          <h3>Next JS</h3>
+          <p>Web design course is most popular course in the world for this time because every single people working to her own business for the time, so they are create her business web page</p>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-4 bg-info text-white">
+          <h3>JQuery</h3>
+          <p>Web design course is most popular course in the world for this time because every single people working to her own business for the time, so they are create her business web page</p>
+      </div>
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js
+"></script>
+</body>
+</html>
